@@ -1,0 +1,59 @@
+/* The home arrow button */
+
+.home {
+    top: 30px;
+    position: relative;
+    left: 3%;
+    padding: 10px 4px 0 5px;
+    border-radius: 5px;
+}
+
+.main {
+    top: 25px;
+    position: absolute;
+}
+
+
+/* the image */
+
+.body {
+    text-align: center;
+}
+
+hr {
+    width: 80%;
+}
+
+.home:hover {
+    background: lightgray;
+}
+
+
+/* show a waning message */
+
+.msg {
+    color: red;
+    text-align: center;
+}
+
+.submit {
+    border: 1px solid lightgray;
+    text-align: center;
+}
+
+
+/* the main part of the page */
+
+.content {
+    /* top: 30px; */
+    text-align: center;
+}
+
+form {
+    top: 20px;
+    position: relative;
+}
+
+.uploaded {
+    text-align: center;
+}

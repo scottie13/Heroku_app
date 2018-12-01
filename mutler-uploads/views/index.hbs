@@ -1,0 +1,43 @@
+{{!-- If an image was not selected --}}
+{{#if msg}}
+<div class="container msg">
+    <h5>{{msg}}</h5>
+</div>
+{{/if}}
+
+
+<br>
+<!-- The canvas body of the page -->
+<div class=" container main">
+    {{#if file}}
+    <div class="container uploaded">
+        <h4><b>{{filename}}</b> Uploaded</h4>
+    </div>
+    {{/if}}
+
+    <div class="container content">
+        {{#if img}}
+        <div class="container">
+            {{!-- On the server the image doesn't need the full path only the image name --}}
+            <img src="/{{img}}" alt="image">
+        </div>
+        {{else}}
+        <div class="container">
+            <img src="/img1.jpg" alt="">
+        </div>
+        {{/if}}
+
+    </div>
+
+    <br>
+    <div class="container submit">
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input class="button" id="input" type="file" name="pic" />
+            <input class="button button-primary" type="submit" />
+        </form>
+    </div>
+
+</div>
+
+<script src="javascripts/main.js"></script>
+<script src="javascripts/uploading.js"></script>
